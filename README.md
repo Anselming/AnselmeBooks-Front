@@ -1,14 +1,17 @@
 # AnselmeBooks-Front
 
-## Para subir o ambiente
-docker run -it --name node-dev -v $(pwd)/:/app -p 80:4200 node bash
-npm install -g @angular/cli
-npm install -g n
-n 14.17.5
+Comando para quando se deseja subir o ambiente
+    docker-compose up
 
-cd /app/anselmebooks
-ng serve --host 0.0.0.0
 
-## Para rodar no VSCode
-docker exec -it node-dev bash
-cd /app/anselmebooks
+Comando para subir o ambiente deixando o terminal livre
+    docker-compose up -d --build
+
+
+Comando para acessar a maquina web após subir o ambiente
+    docker exec -it node-dev bash
+
+
+Comando para subir o angular e torna-lo acessível externamente
+    ng serve --host 0.0.0.0
+
