@@ -1,0 +1,8 @@
+FROM        node:14.17.5-alpine3.14 AS BUILDER
+WORKDIR     /app
+
+RUN         npm install -g @angular/cli
+
+# VOLUME      ./anselmebooks /app
+# EXPOSE      4200
+CMD         ["ng", "serve","--host","0.0.0.0"]

@@ -1,0 +1,10 @@
+services:
+  web:
+    container_name: web
+    build:
+      context: ./anselmebooks
+      target: BUILDER
+    ports: 
+      - '80:4200'
+    volumes:
+      - ./anselmebooks:/app
