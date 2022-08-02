@@ -9,7 +9,7 @@ Comando para subir o ambiente deixando o terminal livre
 
 
 Comando para acessar a maquina web após subir o ambiente
-    docker exec -it node-dev bash
+    docker exec -it web sh
 
 
 Comando para subir o angular e torna-lo acessível externamente

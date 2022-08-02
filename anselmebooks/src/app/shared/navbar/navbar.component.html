@@ -9,11 +9,11 @@
           </a>
            <div ngbDropdownMenu>
              <a class="dropdown-header">Anselme Books</a>
-             <a class="dropdown-item" href="#">Gerenciar Livros</a>
-             <a class="dropdown-item" href="#">Gerenciar Clientes</a>
-             <a class="dropdown-item" href="#">Gerenciar Compras</a>
+             <a class="dropdown-item" [routerLink]="['/Livros']">Gerenciar Livros</a>
+             <a class="dropdown-item" [routerLink]="['/Clientes']">Gerenciar Clientes</a>
+             <a class="dropdown-item" [routerLink]="['/Compras']">Gerenciar Compras</a>
              <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="#">Logout</a>
+             <a class="dropdown-item" [routerLink]="['/login']">Login</a>
            </div>
          </div>
       </div>
@@ -28,13 +28,13 @@
         <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                  <a class="nav-link" href="https://www.creative-tim.com/product/now-ui-kit-angular" target="_blank">
+                  <a class="nav-link" [routerLink]="['/Livraria']" >
                       <i class="now-ui-icons arrows-1_cloud-download-93"></i>
                       <p>Livraria digital</p>
                   </a>
               </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://creativetimofficial.github.io/now-ui-kit-angular/documentation/tutorial" target="_blank">
+                    <a class="nav-link" [routerLink]="['/Leitores']">
                       <i _ngcontent-pig-c128="" class="now-ui-icons sport_user-run"></i>
                       <p>Top Leitores</p>
                     </a>

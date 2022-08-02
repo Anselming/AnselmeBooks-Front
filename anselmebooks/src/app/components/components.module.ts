@@ -30,7 +30,7 @@ import { NgbdModalBasic } from './modal/modal.component';
         TypographyComponent,
         NucleoiconsComponent,
         NotificationComponent,
-        NgbdModalBasic
+        NgbdModalBasic,
     ],
     exports:[ ComponentsComponent ]
 })
